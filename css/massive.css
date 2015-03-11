@@ -20,7 +20,7 @@ body {
 }
 .teaser h1 {
   font-size: 30px;  line-height: 33px;
-  width: 400px;
+  width: 400px;  height: 66px;
   z-index: 2;
 }
 .teaser h1 span.brand {
