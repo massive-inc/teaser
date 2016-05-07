@@ -10,23 +10,117 @@
     <meta name="description" content="Massive" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" >
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="/css/milligram.min.css">
     <link rel="stylesheet" href="/css/massive.css" />
 
     <!-- Want to say hi? Reach out to hi -at- massive.is -->
 
   </head>
   <body>
+    <div class="container">
 
-    <div class="teaser">
-      <h1><span class="brand">Massive</span> is <span class="type"></span></h1>
-      <div class="backdrop">M</div>
+      <div class="row section">
+        <div class="column column-10 indicator">
+          <img src="images/logo.png" />
+        </div>
+        <div class="column column-80">
+          <h2 class="logotype">Massive</h2>
+          <ul class="nav inline">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#notes">Notes</a></li> -->
+            <li><a href="#hire">Hire Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="column column-10 indicator">
+          <h4>About</h4>
+        </div>
+        <div class="column column-90">
+          <p class="lead">
+            Massive helps companies accelerate their technology stacks. We build products, scale engineering teams and provide digital consulting.
+          </p>
+          <p>
+            The startups move to Silicon Valley for 3 months, during which we work intensively with them to get the company into the best possible shape and refine their pitch to investors. Each cycle culminates in Demo Day, when the startups present their companies to a carefully selected, invite-only audience.
+          </p>
+        </div>
+      </div>
+
+      <a name="#work"></a>
+      <div class="row section">
+        <div class="column column-10 indicator">
+          <h4>Select Work</h4>
+        </div>
+        <div class="column column-90">
+          <div id="work-slider" class="work">
+            <div class="row work-flatterbox">
+              <div class="column column-33"/><div class="logo logo-flatterbox"></div></div>
+              <div class="column column-66">
+                <h5>Memorable gifts for every occasion.</h5>
+                <p>The <span>Flatterbox</span> team came to us after being featured on national TV. We helped them better understand their newfound traffic and maximize returns.</p>
+                <a href="https://www.flatterbox.com/" target="_blank">Visit Site &rarr;</a>
+              </div>
+            </div>
+            <div class="row work-oun">
+              <div class="column column-33"/><div class="logo logo-oun"></div></div>
+              <div class="column column-66">
+                <h5>Taking mobile education to a new level.</h5>
+                <p>We worked with <span>One University</span> to spruce up their branding and integrate the proper analytics channels to maximize lead generation.</p>
+                <a href="https://one-university.com/" target="_blank">Visit Site &rarr;</a>
+              </div>
+            </div>
+            <div class="row work-bookt">
+              <div class="column column-33"/><div class="logo logo-bookt"></div></div>
+              <div class="column column-66">
+                <h5>Letting the world share it’s skills online.</h5>
+                <p><span>Bookt</span> is an experimental platform for service providers, allowing customers to discover, book and review anyone from a simple, one-page profile.</p>
+                <a href="https://bookt.me/" target="_blank">Visit Site &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a name="#services"></a>
+      <div class="row section">
+        <div class="column column-10 indicator">
+          <h4>Services</h4>
+        </div>
+        <div class="column column-90">
+          <div class="row services">
+            <div class="column column-33">
+              <h6>Product Development</h6>
+              <p>Whether your website needs a facelift or you need a custom analytics platform for your staff, we have the team and resources to help build it fast and efficiently.</p>
+            </div>
+            <div class="column column-33">
+              <h6>Strategic Consultancy</h6>
+              <p>Considering a new mobile app or digital product? We can provide the necessary research and insight into your product-market fit, go-to-market strategy and technical specifications.</p>
+            </div>
+            <div class="column column-33">
+              <h6>Recruiting and Hiring</h6>
+              <p>Need to scale your technology team? Massive can help you recruit, interview and hire the best engineers and product managers in any region.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a name="#hire"></a>
+      <div class="row section">
+        <div class="column column-10 indicator">
+          <h4>Hire Us</h4>
+        </div>
+        <div class="column column-90">
+          <p>For all inquiries, please email us at <a href="mailto:hi@massive.is">hi@massive.is</a></p>
+        </div>
+      </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="/js/typed.js"></script>
+    <script src="/js/simpleslider.min.js"></script>
     <script src="/js/massive.js"></script>
-
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

@@ -1,74 +1,187 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
+/* Base style */
 body {
-  position: absolute;
-  height: 100%; min-height: 100%;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  color: #555;
+  color: #444;
+}
+a {
+  color: #444;
+  text-decoration: underline;
+}
+p, p.lead {
+  margin-bottom: 10px;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container {
+  max-width: 860px;
+}
+.section {
+  margin-top: 30px;
+}
+.section:first-child {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.indicator {
+  text-align: right;
+  margin-right: 20px;
+}
+.indicator h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 2px 0 0;
+}
+.logotype {
+  margin: 0;  padding: 0;
+  font-size: 28px;  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.inline {
+  list-style-type: none;
+}
+.inline li {
+  display: block;
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+.nav {
+  margin: 0 0 0 1px;  padding: 0;
+}
+.nav li {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.nav li a {
+  text-decoration: none;
 }
 
-.teaser, .teaser h1, .teaser .backdrop {
+.work .column-66 {
+  padding: 15px 20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dcdcdc+0,fbfbfb+100 */
+  background: #dcdcdc; /* Old browsers */
+  background: -moz-linear-gradient(left,  #dcdcdc 0%, #fbfbfb 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #dcdcdc 0%,#fbfbfb 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #dcdcdc 0%,#fbfbfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#fbfbfb',GradientType=1 ); /* IE6-9 */
+}
+.work .column-66 h5 {
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.work .column-66 p {
+  font-size: 15px;
+  line-height: 19px;
+}
+.work .column-66 p span {
+  font-weight: 400;
+  font-style: italic;
+}
+.work .column-66 a {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.work .column-33 {
   position: relative;
-  cursor: default;
 }
-.teaser {
-  margin: -15px auto 0;
-  top: 50%;  width: 400px;
-  text-align:center;  font-weight: 500;
-}
-.teaser h1 {
-  font-size: 30px;  line-height: 33px;
-  width: 400px;  height: 66px;
-  z-index: 2;
-}
-.teaser h1 span.brand {
-  color: #cc3333;
-}
-.teaser h1 span.type {
-  color: #555;
-}
-.teaser .backdrop {
+.work .column-33 .logo {
   position: absolute;
-  top: -70px;  left: 50%;  margin-left: -85px;
-  color: #fafafa;
-  font-size: 200px;  line-height: 200px;
-  z-index: 1;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.small-only { display: none; }
+/* Bookt */
+.work-bookt .column-33 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1fc1c6+0,2786ce+100 */
+  background: #1fc1c6; /* Old browsers */
+  background: -moz-linear-gradient(left,  #1fc1c6 0%, #2786ce 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #1fc1c6 0%,#2786ce 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #1fc1c6 0%,#2786ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fc1c6', endColorstr='#2786ce',GradientType=1 ); /* IE6-9 */
+}
+.logo-bookt {
+  background-image: url(../images/work-bookt.png);
+}
 
-@media(max-width:700px){
-  .small-only { display: block; }
-  .teaser { width: 300px; }
-  .teaser h1 { width: 300px; }
+/* OUN */
+.work-oun .column-33 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#536171+0,3d4c5b+100 */
+  background: #536171; /* Old browsers */
+  background: -moz-linear-gradient(left,  #536171 0%, #3d4c5b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #536171 0%,#3d4c5b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #536171 0%,#3d4c5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#536171', endColorstr='#3d4c5b',GradientType=1 ); /* IE6-9 */
 }
-@media(max-width:900px){
+.logo-oun {
+  background-image: url(../images/work-oun.png);
 }
-@media(max-width:1200px){
+
+/* Flatterbox */
+.work-flatterbox .column-33 {
+  background: #0f2a4d; /* Old browsers */
+}
+.logo-flatterbox {
+  background-image: url(../images/work-flatterbox.png);
+}
+
+.services p {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 0 20px;
 }
 
 
-/* Typed */
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+/* Larger than mobile screen */
+@media (max-width: 40.0rem) {
+  .nav {
+    margin-top: 10px;
+  }
+  .indicator {
+    margin-bottom: 10px;
+    max-width: 100% !important;
+    text-align: left;
+  }
+  .indicator h4 {
+    font-size: 20px;
+  }
+  .work {
+    width: 100%;
+    min-height: 420px;
+  }
+  .work .column-33 {
+    min-height: 200px;
+  }
+  .column {
+    max-width: 100% !important;
+    flex: 100% !important;
+  }
+  .work .column h5 {
+    font-size: 16px;
+  }
+  .work .column p {
+    font-size: 14px;
+  }
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+  p.lead {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .work {
+    width: 740px;
+    height: 166px;
+  }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {  }
