@@ -10,7 +10,7 @@
     <meta name="description" content="Massive" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" >
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="/css/milligram.min.css">
     <link rel="stylesheet" href="/css/massive.css" />
@@ -42,10 +42,7 @@
         </div>
         <div class="column column-90">
           <p class="lead">
-            Massive helps companies accelerate their technology stacks. We build products, scale engineering teams and provide digital consulting.
-          </p>
-          <p>
-            The startups move to Silicon Valley for 3 months, during which we work intensively with them to get the company into the best possible shape and refine their pitch to investors. Each cycle culminates in Demo Day, when the startups present their companies to a carefully selected, invite-only audience.
+            Massive helps companies accelerate their technology stacks by building products, scaling engineering teams and providing strategic, digital consulting.
           </p>
         </div>
       </div>
@@ -56,31 +53,51 @@
           <h4>Select Work</h4>
         </div>
         <div class="column column-90">
-          <div id="work-slider" class="work">
-            <div class="row work-flatterbox">
-              <div class="column column-33"/><div class="logo logo-flatterbox"></div></div>
-              <div class="column column-66">
-                <h5>Memorable gifts for every occasion.</h5>
-                <p>The <span>Flatterbox</span> team came to us after being featured on national TV. We helped them better understand their newfound traffic and maximize returns.</p>
-                <a href="https://www.flatterbox.com/" target="_blank">Visit Site &rarr;</a>
-              </div>
-            </div>
-            <div class="row work-oun">
-              <div class="column column-33"/><div class="logo logo-oun"></div></div>
-              <div class="column column-66">
-                <h5>Taking mobile education to a new level.</h5>
-                <p>We worked with <span>One University</span> to spruce up their branding and integrate the proper analytics channels to maximize lead generation.</p>
-                <a href="https://one-university.com/" target="_blank">Visit Site &rarr;</a>
-              </div>
-            </div>
-            <div class="row work-bookt">
-              <div class="column column-33"/><div class="logo logo-bookt"></div></div>
-              <div class="column column-66">
-                <h5>Letting the world share it’s skills online.</h5>
-                <p><span>Bookt</span> is an experimental platform for service providers, allowing customers to discover, book and review anyone from a simple, one-page profile.</p>
-                <a href="https://bookt.me/" target="_blank">Visit Site &rarr;</a>
-              </div>
-            </div>
+          <div class="slider parent-slider">
+            <ul class="slides">
+              <li class="parent-slide">
+                <div class="slide-image">
+                  <div class="slider child-slider">
+                    <ul class="slides">
+                      <li><img src="images/portfolio/bookt1.png" /></li>
+                      <li><img src="images/portfolio/bookt2.png" /></li>
+                      <li><img src="images/portfolio/bookt3.png" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6>Bookt</h6>
+                <em>bookt.me</em>
+                <p>Bookt is an experimental platform for service providers, allowing customers to discover, book and review anyone from a simple, one-page profile.</p>
+              </li>
+              <li class="parent-slide">
+                <div class="slide-image">
+                  <div class="slider child-slider">
+                    <ul class="slides">
+                      <li><img src="images/portfolio/autopilot1.png" /></li>
+                      <li><img src="images/portfolio/autopilot2.png" /></li>
+                      <li><img src="images/portfolio/autopilot3.png" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6>Autopilot</h6>
+                <em>autopilot.life</em>
+                <p>Bookt is an experimental platform for service providers, allowing customers to discover, book and review anyone from a simple, one-page profile.</p>
+              </li>
+              <li class="parent-slide">
+                <div class="slide-image">
+                  <div class="slider child-slider">
+                    <ul class="slides">
+                      <li><img src="images/portfolio/batoul1.png" /></li>
+                      <li><img src="images/portfolio/batoul2.png" /></li>
+                      <li><img src="images/portfolio/batoul3.png" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6>Batoul</h6>
+                <em>bookt.me</em>
+                <p>Bookt is an experimental platform for service providers, allowing customers to discover, book and review anyone from a simple, one-page profile.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -98,7 +115,7 @@
             </div>
             <div class="column column-33">
               <h6>Strategic Consultancy</h6>
-              <p>Considering a new mobile app or digital product? We can provide the necessary research and insight into your product-market fit, go-to-market strategy and technical specifications.</p>
+              <p>Considering a new mobile app or digital product? We can provide the research and insight into product-market fit, go-to-market strategy and technical specifications.</p>
             </div>
             <div class="column column-33">
               <h6>Recruiting and Hiring</h6>
@@ -119,7 +136,9 @@
       </div>
     </div>
 
-    <script src="/js/simpleslider.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+    <script src="/js/unslider.min.js"></script>
     <script src="/js/massive.js"></script>
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
